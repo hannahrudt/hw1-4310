@@ -10,7 +10,8 @@ app.wsgi_app = WhiteNoise(app.wsgi_app,
 
 @app.route('/', methods=['GET'])
 def hello():
-    return make_response("Hello, world!!!!!!!!!!!!!!!!")
+    # return make_response("Hello, world!!!!!!!!!!!!!!!!")
+    render_template("..\static\index.html")
     
 if __name__ == "__main__":
     app.run(threaded=True, port=5000)
