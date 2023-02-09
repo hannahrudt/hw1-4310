@@ -46,6 +46,8 @@
 
   <!-- Map -->
   <h2 class="title">Caretaker Geographical Distribution</h2>
+  <p class="title">Geographic location of San Francisco trees, differentiated by public and private caretakers.</p>
+  
   <div class="flex-container">
     <svg id="map" height="800" width="800"></svg>
     <div id="maplegend"></div> 
@@ -53,6 +55,7 @@
 
   <!-- Scatter plot -->
   <h2 class="title">Diameter at Breast Height by Site and Caretaker Type</h2>
+
   <div class="flex-container">
     <svg id="scatterplot" height="600" width="800"></svg> 
     <div id="scatterlegend"></div> 
@@ -60,7 +63,8 @@
 
   <!-- Bar chart -->
   <h2 class="title">Species Distrubition of Average Diameter at Breast Height (DBH)*</h2>
-  <h4 class="title">*Average DBH has been rounded to the nearest whole number.</h4>
+  <p class="title">Average DBH bins (rounded to the nearest whole number) on x-axis, species count on y-axis.</p>
+
   <svg id="barchart" height="600" width="1000"></svg>
   
 
@@ -295,7 +299,7 @@
 
   <script id="mapScript">
     const mapSVG = d3.select("#map");
-    const mapMargin = { top: 20, right: 20, bottom: 20, left:20};
+    const mapMargin = { top: 20, right: 20, bottom: 20, left:100};
     const mapAreaWidth = mapSVG.attr("width") - mapMargin.left - mapMargin.right;
     const mapAreaHeight = mapSVG.attr("height") - mapMargin.top - mapMargin.bottom;
     const map = mapSVG.append("g")
