@@ -1,0 +1,386 @@
+<html>
+<head>
+    <title>INFO 4310 - HW 1</title>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+</head>
+
+<style>
+	.gridlines line {
+    stroke: #bbb;
+  }
+  
+  .gridlines .domain {
+    stroke: none;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title {
+    margin-left: 90px;
+  }
+
+  body {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
+  .neighborhood {
+        fill: aliceblue;
+      }
+
+  .outline {
+    stroke: black;
+    stroke-width: 1px;
+    fill: none;
+  }
+</style>
+
+<body> 
+	<h1>INFO 4310 - HW1</h1>
+  <h2>Hannah Rudt hgr26</h2>
+
+  <!-- Map -->
+  <h2 class="title">Caretaker Geographical Distribution</h2>
+  <div class="flex-container">
+    <svg id="map" height="800" width="800"></svg>
+    <div id="maplegend"></div> 
+  </div>
+
+  <!-- Scatter plot -->
+  <h2 class="title">Diameter at Breast Height by Site and Caretaker Type</h2>
+  <div class="flex-container">
+    <svg id="scatterplot" height="600" width="800"></svg> 
+    <div id="scatterlegend"></div> 
+  </div>
+
+  <!-- Bar chart -->
+  <h2 class="title">Species Distrubition of Average Diameter at Breast Height (DBH)*</h2>
+  <h4 class="title">*Average DBH has been rounded to the nearest whole number.</h4>
+  <svg id="barchart" height="600" width="1000"></svg>
+  
+
+	<script id="scatterScript">
+		// scatter svg details
+		const scatter = d3.select("svg#scatterplot");
+		const margin = {top: 10, right: 20, bottom: 230, left: 100};
+		const chartWidth = scatter.attr("width") - margin.left - margin.right;
+		const chartHeight = scatter.attr("height") - margin.top - margin.bottom;
+
+		// Scatter <g> tag to put annotations above axis labels
+		let annotations = scatter.append("g").attr("id","annotations");
+
+		let chartArea = scatter.append("g").attr("id","points")
+                                  .attr("transform","translate("+margin.left+","+margin.top+")");
+
+		const loadScatter = async function() {
+      
+      // Load filtered tree data
+      let trees = await d3.csv("Street_Tree_List-2022-01-30_FILTERED.csv", d3.autoType );
+
+			// Make DBH number in case any strings
+			trees.forEach( d => {
+          d['DBH'] = Number(d['DBH']);
+        });
+
+			// SCALES
+			// x axis, Site Info, categorical scalePoint()
+			const sites = trees.map((d) => d["qSiteInfo"])
+			const siteScale = d3.scalePoint().domain(sites).range([0, chartWidth]);
+      
+			// y axis, DBH, continuous scaleLinear()
+			const dbhExtent = d3.extent(trees, d => d['DBH']);
+			const dbhScale = d3.scaleLinear().domain(dbhExtent).range([chartHeight, 0]);
+
+			// color scale, by caretaker binary
+      const binCaretaker = ["Public", "Private"];
+      const caretakerScale = d3.scaleOrdinal().domain(binCaretaker).range(['#082e12', 'greenyellow']);
+
+			// AXES
+			// y axis
+			let leftAxis = d3.axisLeft(dbhScale)
+												.tickFormat(d3.format("0"))
+												
+			let leftGridlines = d3.axisLeft(dbhScale)
+														.tickSize(-chartWidth-10)
+														.tickFormat("")
+
+			annotations.append("g")
+				.attr("class", "y axis")
+				.attr("transform",`translate(${margin.left-10},${margin.top})`)
+				.call(leftAxis)
+			annotations.append("g")
+				.attr("class", "y gridlines")
+				.attr("transform",`translate(${margin.left-10},${margin.top})`)
+				.call(leftGridlines);
+
+			// x axis
+			let bottomAxis = d3.axisBottom(siteScale);
+
+			let bottomGridlines = d3.axisBottom(siteScale)
+															.tickSize(-chartHeight-10)
+															.tickFormat("")
+
+			// selectall on all the text elements in the axis and add a transform rotate
+			annotations.append("g")
+				.attr("class", "x axis")
+				.attr("transform",`translate(${margin.left},${chartHeight + margin.top + 10})`)
+				.call(bottomAxis)
+				.selectAll("text")
+				.style("text-anchor", "end")
+        .style("font-size", "1.2em")
+				.attr("dx", "-.8em")
+				.attr("dy", ".15em")
+				.attr("transform", "rotate(-55)");
+			annotations.append("g")
+				.attr("class", "x gridlines")
+				.attr("transform",`translate(${margin.left},${chartHeight + margin.top + 10})`)
+				.call(bottomGridlines);
+
+			// plot data 
+			let circles = chartArea.selectAll("circle.point").data(trees)
+                                    .join("circle")
+                                    .attr("class", "point")
+                                    .attr("opacity", 0.4)
+                                    .attr("cx", d => siteScale(d['qSiteInfo']) + 10*Math.random()-5)
+                                    .attr("cy", d => dbhScale(d['DBH']+1))
+                                    .attr("r", 4)
+                                    .attr("fill", d => caretakerScale(d['binCaretaker']) );
+
+			// changing shape based on owner type
+      // if caretaker is private, append circle
+      // if caretaker is public, append triangle
+
+
+			// SOURCE: https://stackoverflow.com/questions/39760757/d3-scatterplot-from-all-circles-to-different-shapes
+			// var symbol = d3.symbol(); 
+
+			// circles.attr("d", symbol.type(function(d){
+			// 		if(d.binCaretaker == "Public"){ return d3.symbolTriangle} 
+			// 		else if (d.binCaretaker == "Private"){ return d3.symbolCircle}
+			// 	}))
+
+      // LEGEND -- didn't work w a forloop, did it manually
+      const caretakerLegend = d3.select("div#scatterlegend");
+
+      let svgCaretakerLeg = caretakerLegend.append("svg")
+                                            .attr("width", "400px")
+                                            .attr("height", "600px");
+      // public
+      svgCaretakerLeg.append("circle")
+                      .attr("cx", 30)
+                      .attr("cy", 300)
+                      .attr("r", 10)
+                      .attr("fill", "#082e12");
+
+      svgCaretakerLeg.append("text")
+                      .text("Public Caretaker")
+                      .attr("x", 45)
+                      .attr("y", 300)
+                      .style("dominant-baseline", "middle");
+      
+      // private               
+      svgCaretakerLeg.append("circle")
+                      .attr("cx", 30)
+                      .attr("cy", 350)
+                      .attr("r", 10)
+                      .attr("fill", "greenyellow");
+
+      svgCaretakerLeg.append("text")
+                      .text("Private Caretaker")
+                      .attr("x", 45)
+                      .attr("y", 350)
+                      .style("dominant-baseline", "middle");
+
+
+      // why is this not working
+      // https://d3-graph-gallery.com/graph/custom_legend.html
+      
+      // caretakerScale.domain().forEach ( (d, i) => {
+      //     svgLegend.append("circle")
+      //                .attr("cx", 500)
+      //                .attr("cy", 500)
+      //                .attr("r", 15)
+      //                .style("fill", caretakerScale(d));
+      //   });
+
+		}
+		loadScatter();
+	</script>
+
+  <script id="barScript">
+    // number of species with avg DBH within the bins
+
+    // bar svg details
+		const bar = d3.select("svg#barchart");
+		const barMargin = {top: 10, right: 20, bottom: 100, left: 100};
+		const barChartWidth = bar.attr("width") - barMargin.left - barMargin.right;
+		const barChartHeight = bar.attr("height") - barMargin.top - barMargin.bottom;
+
+		let barAnnotations = bar.append("g").attr("id","barAnnotations");
+
+		let barChartArea = bar.append("g").attr("id","bars")
+                                      .attr("transform","translate("+barMargin.left+","+barMargin.top+")");
+
+		const loadBar = async function() {
+      
+      // Load filtered tree data
+      let binsDBH = await d3.csv("bins_dbh.csv", d3.autoType );
+
+			// Make sure numbers
+			binsDBH.forEach( d => {
+          d['count'] = Number(d['count']);
+        });
+
+        binsDBH.forEach( d => {
+          d['avgDBH'] = Number(d['avgDBH']);
+        });
+
+			// SCALES
+			// x axis, avg DBH
+      const dbhExtent2 = d3.extent(binsDBH, d => d['avgDBH']);
+			const dbhScale2 = d3.scaleLinear().domain(dbhExtent2).range([0, barChartWidth]);
+      
+			// y axis, count of species
+			const countExtent = d3.extent(binsDBH, d => d['count']);
+			const countScale = d3.scaleLinear().domain(countExtent).range([barChartHeight, 0]);
+
+      // AXES
+			// y axis
+			let barLeftAxis = d3.axisLeft(countScale)
+												.tickFormat(d3.format("0"))
+												
+			let barLeftGridlines = d3.axisLeft(countScale)
+														   .tickSize(-barChartWidth-10)
+														   .tickFormat("")
+
+			barAnnotations.append("g")
+                    .attr("class", "y axis")
+                    .attr("transform",`translate(${barMargin.left - 10},${barMargin.top})`)
+                    .call(barLeftAxis)
+			barAnnotations.append("g")
+                    .attr("class", "y gridlines")
+                    .attr("transform",`translate(${barMargin.left - 10},${barMargin.top})`)
+                    .call(barLeftGridlines);
+
+			// x axis
+			let barBottomAxis = d3.axisBottom(dbhScale2)
+                            .tickFormat(d3.format("0"));
+
+      barAnnotations.append("g")
+                    .attr("class", "x axis")
+                    .attr("transform",`translate(${barMargin.left},${barChartHeight+barMargin.top})`)
+                    .call(barBottomAxis);
+
+      // add bars
+      barChartArea.selectAll("rect").data(binsDBH)
+                  .join("rect")
+                  .attr("x", d => dbhScale2(d['avgDBH']))
+                  .attr("y", d => countScale(d['count'] + 1))
+                  .attr("height", d => (countScale(0) - countScale(d['count'])))
+                  .attr("width", 6)
+                  .attr("fill", "darkgreen")
+                  .style("stroke", "none");
+      }
+      loadBar();
+    
+
+  </script>
+
+  <!-- top 10 most popular species and avg dbh? -->
+
+  <script id="mapScript">
+    const mapSVG = d3.select("#map");
+    const mapMargin = { top: 20, right: 20, bottom: 20, left:20};
+    const mapAreaWidth = mapSVG.attr("width") - mapMargin.left - mapMargin.right;
+    const mapAreaHeight = mapSVG.attr("height") - mapMargin.top - mapMargin.bottom;
+    const map = mapSVG.append("g")
+                      .attr("transform","translate("+mapMargin.left+","+mapMargin.top+")");
+  
+    const loadMap = async function() {
+      const sf = await d3.json("SF-Neighborhoods.geo.json");
+      console.log(sf);
+
+      // data has neighborhoods as topographic feature
+      var neighborhoods = topojson.feature(sf, sf.objects.SFNeighborhoods);
+      var neighborhoodsMesh = topojson.mesh(sf, sf.objects.SFNeighborhoods);
+      var projection = d3.geoAlbersUsa().fitSize([mapAreaWidth, mapAreaHeight], neighborhoods);
+      var path = d3.geoPath().projection(projection);
+      // console.log(neighborhoods);
+      // console.log(neighborhoodsMesh);
+
+      // draw neighborhoods
+      map.selectAll("path.neighborhood").data(neighborhoods.features)
+         .join("path")
+         .attr("class", "neighborhood")
+         .attr("note", d => d.id)
+         .attr("d", path);
+
+      // neighborhood outlines
+      map.append("path").datum(neighborhoodsMesh)
+         .attr("class","outline")
+         .attr("d", path);
+
+      // color scale for caretaaker
+      const binCaretaker = ["Public", "Private"];
+      const caretakerScale = d3.scaleOrdinal().domain(binCaretaker).range(['#082e12', 'greenyellow']);
+
+      // add tree positions
+      var trees = await d3.csv("Street_Tree_List-2022-01-30_FILTERED.csv", d3.autotype);
+      
+      trees.forEach( d => {
+        d.Position = projection( [d.Longitude, d.Latitude] );
+       });
+
+      // draw tree dots
+      map.selectAll("circle").data(trees)
+       .join("circle")
+       .attr("r", 1.5)
+       .attr("fill", d => caretakerScale(d['binCaretaker']))
+       .attr("opacity", 0.4)
+       .attr("cx", d => d.Position[0])
+       .attr("cy", d => d.Position[1]);
+
+       // legend (same as scatter plot)
+       // LEGEND -- didn't work w a forloop, did it manually
+      const caretakerLegend = d3.select("div#maplegend");
+
+      let svgCaretakerLeg = caretakerLegend.append("svg")
+                                            .attr("width", "400px")
+                                            .attr("height", "600px");
+      // public
+      svgCaretakerLeg.append("circle")
+                      .attr("cx", 30)
+                      .attr("cy", 300)
+                      .attr("r", 10)
+                      .attr("fill", "#082e12");
+
+      svgCaretakerLeg.append("text")
+                      .text("Public Caretaker")
+                      .attr("x", 45)
+                      .attr("y", 300)
+                      .style("dominant-baseline", "middle");
+
+      // private               
+      svgCaretakerLeg.append("circle")
+                      .attr("cx", 30)
+                      .attr("cy", 350)
+                      .attr("r", 10)
+                      .attr("fill", "greenyellow");
+
+      svgCaretakerLeg.append("text")
+                      .text("Private Caretaker")
+                      .attr("x", 45)
+                      .attr("y", 350)
+                      .style("dominant-baseline", "middle");
+    }
+    
+    loadMap();
+  </script>
+
+</body>
+</html>

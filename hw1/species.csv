@@ -1,0 +1,420 @@
+qSpecies,count,avgDBH
+:: Tree,5,3
+Abutilon hybridum :: Flowering maple,1,1
+Acacia baileyana 'Purpurea' :: Purple-leaf Acacia,11,5.545454545
+Acacia baileyana :: Bailey's Acacia,124,7.540322581
+Acacia cognata :: River Wattle,8,7.625
+Acacia cyclops :: Cyclops wattle,2,4.5
+Acacia dealbata :: Silver Wattle,1,4
+Acacia decurrens :: Acacia: Silver Wattle,7,12.42857143
+Acacia longifolia :: Golden Wattle,37,13.67567568
+Acacia melanoxylon :: Blackwood Acacia,820,15.85853659
+Acacia spp :: Acacia Spp,12,15.25
+Acacia stenophylla :: Shoestring Acacia,78,3.08974359
+Acca sellowiana :: Pineapple Guava Tree,2,5.5
+Acer buergeranum :: Trident Maple,89,3.471910112
+Acer circinatum :: Vine Maple,2,4
+Acer japonicum :: Japanese Maple,1,11
+Acer macrophyllum :: Big Leaf Maple,7,12.42857143
+Acer negundo :: Box Elder,1,3
+Acer palmatum 'Bloodgood' :: Bloodgood Japanese Maple,7,3.285714286
+Acer palmatum :: Japanese Maple,101,5.03960396
+Acer rubrum 'Armstrong' :: Armstrong Red Maple,18,4.166666667
+Acer rubrum 'Autumn Glory' :: Red Maple Tree 'Autumn Glory',1,3
+Acer rubrum 'October Glory' :: Red October Glory Maple,7,3
+Acer rubrum 'Red Sunset' :: Red Swamp Maple,30,3.166666667
+Acer rubrum :: Red Maple,186,3.403225806
+Acer saccharinum :: Silver Maple,26,9.5
+Acer spp :: Maple,8,8.5
+Acer x 'Autumn Blaze' :: Hybrid Maple,1,3
+Acer x freemanii :: Freeman Maple,47,4.29787234
+Aesculus californica :: California Buckeye,21,6.380952381
+Aesculus hippocastanum :: White Horsechestnut,2,14.5
+Aesculus x carnea 'Briotii' :: Ruby Horse Chestnut,8,4.5
+Aesculus x carnea 'O'Neill' :: O'Neill Red Horse Chestnut,1,4
+Aesculus x carnea :: Red Horse Chestnut,18,8.611111111
+Afrocarpus gracilior :: Fern Pine,109,6.155963303
+Agonis flexuosa 'After Dark' :: Peppermint willow 'After Dark',41,3.146341463
+Agonis flexuosa :: Peppermint Willow,199,10.13567839
+Ailanthus altissima :: Tree Of Heaven,1,5
+Albizia distachya :: Plume Albizia Tree,3,8
+Albizia julibrissin :: Mimosa Silk Tree,11,4.545454545
+Alnus cordata :: Italian Alder,4,11.5
+Alnus rhombifolia :: White Alder,11,7.272727273
+Aloe barberae :: Tree aloe,2,7
+Angohpora spp. :: Angophora species,1,4
+Araucaria araucana :: Monkey puzzle,3,2.333333333
+Araucaria columnaris :: Coral reef araucaria,11,9.090909091
+Araucaria heterophylla :: Norfolk Island Pine,13,5.769230769
+Arbutus 'Marina' :: Hybrid Strawberry Tree,1063,5.816556914
+Arbutus unedo 'Compacta' :: Dwarf strawberry tree,1,3
+Arbutus unedo :: Strawberry Tree,137,7.306569343
+Archontophoenix cunninghamiana :: King Palm,9,7.888888889
+Archontophoenix myolensis :: Myola palm,1,12
+Arctostaphylos manzanita 'Dr Hurd' :: Dr. Hurd Manzanita,1,3
+Arecastrum romanzoffianum :: Queen Palm,7,12.42857143
+Auranticarpa rhombifolia :: Queensland Pittosporum,1,17
+Azara microphylla :: Little-Leaf Azara,2,4
+Bambusa spp :: Bamboo Species,6,7.333333333
+Banksia integrifolia :: Coast Banksia,5,3
+Betula nigra :: River Birch,3,9
+Betula pendula :: European White Birch,30,8.433333333
+Betula spp :: Birch,13,5.076923077
+Brachychiton acerifolius :: Australian Flame Tree,1,6
+Brachychiton populneus :: Bottle Tree,4,11.25
+Brahea edulis :: Guadalupe Palm,30,19.43333333
+Brugmansia spp :: Angel trumpet,24,8.958333333
+Butia capitata :: Pindo Palm,1,23
+Callistemon 'Jeffers' :: Purple bottlebrush,1,6
+Callistemon citrinus :: Lemon Bottlebrush,685,9.010218978
+Callistemon salignus :: White flowering bottlebrush,1,10
+Callistemon viminalis :: Weeping Bottlebrush,172,7.75
+Calocedrus decurrens :: Incense Cedar,14,15.07142857
+Carpinus betulus :: European Hornbeam,10,6.6
+Caryota maxima 'Himalaya' :: Himalayan Fishtail Palm,1,14
+Cassia excelsa :: Crown of Gold Tree,1,3
+Cassia leptophylla :: Gold Medallion Tree,16,4.25
+Casuarina cunninghamiana :: Horsetail pine,12,7.833333333
+Casurina stricta :: Beefwood: Drooping She-Oak,2,21.5
+Ceanothus 'Ray Hartman' :: California Lilac 'Ray Hartman',52,4.711538462
+Ceanothus Sps :: California lilac,39,5.846153846
+Cedrela fissilis :: Argentine cedar,1,1
+Cedrus atlantica :: Atlas Cedar,9,10.33333333
+Cedrus deodara :: Deodar Cedar,26,11.65384615
+Cedrus libani :: Lebanon cedar,1,6
+Ceiba speciosa :: Silk floss,27,4.777777778
+Celtis australis :: European Hackberry,4,4.75
+Celtis occidentalis :: Common Hackberry,7,8.857142857
+Celtis sinensis :: Chinese Hackberry,36,8.388888889
+Ceratonia siliqua :: Carob,171,11.39766082
+Cercis canadensis 'Forest Pansy' :: Forest Pansy Redbud,3,2.666666667
+Cercis canadensis :: Eastern Redbud,10,2.8
+Cercis occidentalis :: Western Redbud,23,4.260869565
+Cercocarpus betuloides :: Mountain mahogany,1,24
+Chamaecyparis obtusa :: Hinoki cypress,1,12
+Chamaecyparis species ::,1,10
+Chamaerops humilis :: Mediterranean Fan Palm,53,10.16981132
+Chiranthodendron pentadactylon :: Monkey Hand Tree,1,19
+Chitalpa tashkentensis ::,4,4.5
+Cinnamomum camphora :: Camphor Tree,28,9.285714286
+Citrus × limon 'Lisbon' :: Lisbon Lemon Tree,1,10
+Citrus × meyeri 'Improved' :: Improved Meyer Lemon,1,3
+Citrus aurantifolia 'Bearss' :: Seedless Lime,4,4.25
+Citrus spp :: Lemon: Orange: Lime,31,4.419354839
+Cordyline australis :: Dracena Palm,373,9.302949062
+Cornus florida :: Eastern Dogwood,2,3
+Cornus SPP :: Dogwood,1,3
+Corylus colurna :: Hazel: Turkish,1,6
+Corymbia calophylla ::,2,19.5
+Corymbia citriodora :: Lemon Scented Gum,11,12
+Corymbia ficifolia :: Red Flowering Gum,782,19.64705882
+Corymbia maculata :: Spotted Gum,20,18
+Cotinus coggygria 'Royal Purple' :: Smoke tree,5,2.2
+Cotoneaster SPP :: Cotoneaster,43,9.976744186
+Crataegus laevigata :: English Hawthorn,81,4.827160494
+Crataegus phaenopyrum :: Washington Hawthorn,127,5.086614173
+Crateagus spp :: Hawthorn,22,5.636363636
+Cryptomeria japonica :: Japanese Cryptomeria,2,14
+Cupaniopsis anacardioides :: Carrotwood,53,7
+Cupressocyparis leylandii :: Leyland Cypress,26,17.38461538
+Cupressus arizonica :: Arizona Cypress,4,32.5
+Cupressus macrocarpa :: Monterey Cypress,344,29.33430233
+Cupressus sempervirens :: Italian Cypress,40,4.225
+Cussonia spicata :: Cabbage tree,6,4.833333333
+Cycas revoluta :: Sago palm,1,12
+Dicksonia antarctica :: Soft Tree Fern,6,10.66666667
+Diospyros kaki :: Persimmon,1,3
+Dodonaea viscosa 'Purpurea' :: Purple Hopseed Bush,86,5.209302326
+Dodonaea viscosa :: Hop Bush,21,3.428571429
+Dracaena draco :: Dragon Tree,6,3
+Dypsis cabadae :: Cabada palm,1,3
+Dypsis decaryi :: Triangle palm,1,4
+Elaeocarpus decipiens :: Japanese Blueberry Tree,18,2.444444444
+Eriobotrya deflexa 'Coppertone' :: Coppertone Loquat,13,4.769230769
+Eriobotrya deflexa :: Bronze Loquat,466,6.143776824
+Eriobotrya japonica :: Edible Loquat,46,6.5
+Eucalyptus camaldulensis :: River Red Gum,19,23.26315789
+Eucalyptus cinerea :: Ash-colored Eucalyptus,3,13.33333333
+Eucalyptus globulus :: Blue Gum,94,27.19148936
+Eucalyptus lehmanni :: Bushy Yate,16,7.875
+Eucalyptus leucoxylon mac 'Rosea' :: Yellow Gum,15,15
+Eucalyptus longifolia :: Woollybutt,1,12
+Eucalyptus nicholii :: Nichol's Willow-Leafed Peppermint,29,21.79310345
+Eucalyptus polyanthemos :: Silver Dollar Eucalyptus,197,18.6142132
+Eucalyptus pulverulenta :: Silver Mountain Gum Tree,3,12
+Eucalyptus robusta :: Swamp mahogany,7,16.14285714
+Eucalyptus rudis :: Swamp Gum: Flooded Gum,3,13.33333333
+Eucalyptus saligna :: Sidney Blue Gum,1,16
+Eucalyptus sideroxylon :: Red Ironbark,150,19.98
+Eucalyptus Spp :: Eucalyptus,70,28.27142857
+Eucalyptus torquata :: Coral Gum,1,30
+Eucalyptus viminalis :: Manna Gum,10,11.5
+Fagus sylvatica :: European Beech,2,17.5
+Ficus carica :: Edible Fig,15,8.066666667
+Ficus laurel ::,2,10.5
+Ficus macrophylla :: Morton Bay Fig,6,28
+Ficus microcarpa :: Chinese Banyan,160,13.65625
+Ficus microcarpa nitida 'Green Gem' :: Indian Laurel Fig Tree 'Green Gem',1425,14.45614035
+Ficus nitida :: Laurel Fig,276,18.61594203
+Ficus retusa nitida :: Banyan Fig,311,13.85530547
+Ficus rubiginosa :: Port Jackson Fig,11,14.81818182
+Ficus Spp. ::,10,5.1
+Fraxinus americana 'Autumn Purple' :: American Autumn Purple Ash,11,3
+Fraxinus americana :: American Ash,38,10.18421053
+Fraxinus ornus :: Flowering Ash,2,26
+Fraxinus oxycarpa 'Raywood' :: Raywood Ash,28,6.035714286
+Fraxinus oxycarpa :: Ash,21,6.285714286
+Fraxinus spp :: Ash Spp,80,8.9375
+Fraxinus uhdei :: Shamel Ash: Evergreen Ash,117,22.45299145
+Fraxinus velutina :: Modesto Ash,1,4
+Fraxinus x Moraine :: Moraine Ash,5,23.8
+Fremontodendron spp :: Flannel Bush Tree,10,4.4
+Geijera parviflora :: Australian Willow,84,7.738095238
+Ginkgo biloba 'Autumn Gold' :: Ginkgo: Autumn Gold,27,3
+Ginkgo biloba 'Fairmont' :: Fairmont Ginkgo,12,3.916666667
+Ginkgo biloba 'Princeton Sentry' :: Princeton Sentry Maidenhair,5,11
+Ginkgo biloba 'Saratoga' :: Ginkgo: Saratoga,2,4.5
+Ginkgo biloba :: Maidenhair Tree,662,5.614803625
+Gleditsia triacanthos 'Aurea' :: Honey Locust 'Aurea',2,7
+Gleditsia triacanthos 'Shademaster' :: Honey Locust 'Shademaster',2,7.5
+Gleditsia triacanthos 'Sunburst' :: Sunburst Honey Locust,3,4.666666667
+Gleditsia triacanthos :: Honey Locust,11,4.090909091
+Grevillea 'Red Hooks' :: Silk Oak Tree 'Red Hooks',5,16.2
+Grevillea robusta :: Silk Oak Tree,14,13.14285714
+Grevillea spp :: Silkoak species,2,5.5
+Hakea suaveolens :: Sweet Hakea Tree,18,6
+Heteromeles arbutifolia :: Toyon,16,9.5625
+Howea forsteriana :: Kentia Palm,3,4.666666667
+Hymenosporum flavum :: Sweet Shade,22,8.363636364
+Hymenosporum flavum :: Sweetshade,22,6.045454545
+Ilex altaclarensis 'Wilsonii' :: Wilson Holly Tree,19,12.36842105
+Ilex aquifolium :: European Holly,16,10.6875
+Ilex opaca :: American Holly,1,10
+Ilex spp :: Holly Species,11,5.727272727
+Jacaranda mimosifolia :: Jacaranda,192,6.635416667
+Jubaea chilensis :: Chilean Wine Palm,1,39
+Juglans californica :: Walnut: Black (s.calif),1,18
+Juglans hindsii :: Walnut: Black (n.calif),1,30
+Juglans nigra :: Eastern black walnut,2,30
+Juglans regia :: Walnut: English,6,14.5
+Juniperus chinensis :: Juniper,344,9.034883721
+Koelreuteria bipinnata :: Chinese Flame Tree,7,8
+Koelreuteria paniculata :: Golden Rain Tree,49,7.408163265
+Lagerstroemia indica 'Tuscarora' :: Tuscarora Crape Myrtle,1,2
+Lagerstroemia indica :: Crape Myrtle,24,3.541666667
+Lagerstroemia spp :: Crape myrtle species,1,6
+Lagunaria patersonii :: Primrose Tree,227,3.788546256
+Laurus nobilis :: Sweet Bay: Grecian Laurel,189,5.798941799
+Laurus x 'Saratoga' :: Hybrid Laurel,10,2.7
+Leptospermum laevigatum :: Australian Tea Tree,65,11.49230769
+Leptospermum scoparium 'Ruby Glow' :: New Zealand Ruby Glow Tea Tree,9,2.444444444
+Leptospermum scoparium 'Snow White' :: New Zealand White Tea Tree,1,3
+Leptospermum scoparium :: New Zealand Tea Tree,106,5.20754717
+Ligustrum japonicum :: Japanese Privet,36,9
+Ligustrum lucidum :: Glossy Privet,481,9.873180873
+Ligustrum ovalifolium :: California privet,1,6
+Liquidambar orientalis :: Oriental Sweet Gum,8,5.375
+Liquidambar styraciflua 'Festival' :: Festival Sweet Gum,1,6
+Liquidambar styraciflua 'Palo Alto' :: Palo Alto Sweet Gum,1,3
+Liquidambar styraciflua 'Rotundiloba' :: Roundleaf sweetgum,20,4.2
+Liquidambar styraciflua :: American Sweet Gum,329,9.361702128
+Liriodendron tulipifera :: Tulip Tree,60,10.21666667
+Lophostemon confertus :: Brisbane Box,1727,8.143601621
+Lyonothamnus floribundus subsp. asplenifolius :: Santa Cruz Ironwood,108,3.916666667
+Macadamia tetraphylla :: Macadamia,1,2
+Magnolia champaca :: Champa,23,4.304347826
+Magnolia doltsopa :: Himalayan Magnolia,39,4.153846154
+Magnolia grandiflora 'D.D. Blanchard' :: D.D. Blanchard Southern Magnolia,6,2.5
+Magnolia grandiflora 'Little Gem' :: Little Gem Magnolia,194,3.335051546
+Magnolia grandiflora 'Majestic Beauty' :: Majestic Beauty Magnolia,8,5.375
+Magnolia grandiflora 'Russet' :: Russet Magnolia,27,5.555555556
+Magnolia grandiflora 'Saint Mary' :: Saint Mary Magnolia,66,5.484848485
+Magnolia grandiflora 'Samuel Sommer' :: Samuel Sommer Magnolia,86,3.802325581
+Magnolia grandiflora :: Southern Magnolia,1377,7.382716049
+Magnolia sargentiana 'Robusta' :: Robusta Magnolia,1,3
+Magnolia spp :: Magnolia,14,5.571428571
+Magnolia x soulangiana :: Saucer Magnolia,21,7.285714286
+Malus :: Crab Apple,29,4.827586207
+Malus floribunda :: Showy Crab Apple: Japanese Crabapple,29,4.620689655
+Malus sylvestris :: Apple,1,6
+Mangifera indica :: Mango,1,1
+Maytenus boaria :: Mayten,766,8.577023499
+Melaleuca ericifolia :: Heath Melaleuca,30,8.5
+Melaleuca linariifolia :: Flaxleaf Paperbark,54,12.24074074
+Melaleuca nesophila :: Pink Melaleuca,20,5.65
+Melaleuca quinquenervia :: Cajeput,310,7.8
+Melaleuca spp :: Melaleuca spp,13,7.307692308
+Melaleuca styphelliodes :: Paperbark Tree,26,13.46153846
+Metasequoia glyplostroboides :: Dawn Redwood,6,12
+Metrosideros excelsa 'Aurea' ::,1,12
+Metrosideros excelsa :: New Zealand Xmas Tree,1937,11.52865256
+Metrosideros spp ::,1,6
+Moringa oleifera :: Drumstick tree,1,2
+Morus alba :: White Mulberry,18,6.888888889
+Morus rubra :: Red mulbeerry,1,7
+Musa spp :: Banana,3,6.333333333
+Myoporum laetum :: Myoporum,316,13.17405063
+Myrica californica :: Pacific Wax Myrtle Tree,2,6
+Nerium oleander :: Oleander,7,10.57142857
+Nyssa sylvatica :: Tupelo: Sour Gum,2,2.5
+Olea europaea 'Fruitless' :: Fruitless Olive,30,4.6
+Olea europaea 'Majestic Beauty' :: Majestic Beauty Fruitless Olive,17,2.647058824
+Olea europaea 'Swan Hill' :: Olive,4,9.25
+Olea europaea 'Wilsonii' :: Wilson Olive Semi-fruitless,29,2.724137931
+Olea europaea :: Olive Tree,789,7.553865653
+Olea Majestic Beauty ::,4,2
+Palm (unknown Genus) :: Palm Spp,4,29.75
+Persea americana :: Avocado,16,9.75
+Persea borbonia :: False Avocado,3,22.66666667
+Persea indica :: Indian Bay,5,12.8
+Phoenix canariensis :: Canary Island Date Palm,210,34.78571429
+Phoenix dactylifera :: Date Palm,16,22.3125
+Phoenix roebelenii :: Pigmy Date Palm,2,2
+Phoenix rupicola :: Cliff date palm,1,70
+Phoenix spp :: Date palm (species unknown),2,80
+Photinia fraseri :: Photinia Tree,5,4.6
+Photinia fraseri :: Photinia: Chinese photinia,84,5.702380952
+Picea Spp :: Spruce Spp,9,5.333333333
+Pinus canariensis :: Canary Island Pine,70,11.24285714
+Pinus contorta :: Shore Pine,1,17
+Pinus halepensis :: Allepo Pine,3,16
+Pinus muricata :: Bishop Pine,3,11.33333333
+Pinus pinea :: Italian Stone Pine,82,19.90243902
+Pinus radiata :: Monterey Pine,426,24.31455399
+Pinus Spp :: Pine Spp,34,8.441176471
+Pinus thunbergii :: Japanese Black Pine,19,6.736842105
+Pinus torreyana :: Torrey Pine,1,12
+Pistacia chinensis :: Chinese Pistache,97,3.845360825
+Pittosporum crassifolium :: Karo Tree,360,7.213888889
+Pittosporum eugenioides :: Tarata,33,9.787878788
+Pittosporum spp :: Pittosporum spp,11,8.363636364
+Pittosporum tenuifolium :: Tawhiwhi Pittosporum,60,8.716666667
+Pittosporum tobira :: Japanese Mockorange,14,6.642857143
+Pittosporum undulatum :: Victorian Box,1669,9.80587178
+Platanus orientalis :: Eastern Plane Tree,2,32.5
+Platanus racemosa :: California Sycamore,13,9.769230769
+Platanus x hispanica 'Bloodgood' :: Bloodgood London Plane,1,20
+Platanus x hispanica 'Columbia' :: Columbia Hybrid Plane Tree,30,2.866666667
+Platanus x hispanica 'Yarwood' :: Yarwood Sycamore,78,8.705128205
+Platanus x hispanica :: Sycamore: London Plane,2633,13.69312571
+Podocarpus gracilor :: Fern Pine,55,3.072727273
+Podocarpus henkelii :: Long-Leafed Yellow-Wood,2,2
+Podocarpus macrophyllus :: Yew Pine,56,5.517857143
+Populus nigra 'Italica' :: Lombardy Poplar,72,13.72222222
+Populus spp :: Poplar Spp,10,33
+Populus tremuloides :: Quaking aspen,3,4
+Potential Site :: Potential Site,11,1.909090909
+Private shrub :: Private Shrub,2,20
+Privet ::,1,3
+Prunus amygdalus :: Almond,2,12
+Prunus armeniaca :: Apricot,5,3.2
+Prunus blireiana :: Flowering Plum,51,5.098039216
+Prunus caroliniana :: Carolina Cherry Laurel,6,3
+Prunus cerasifera 'Atropurpurea' :: Purple-Leaf Plum,22,4.727272727
+Prunus cerasifera 'Krauter vesuvius' :: Purple Leaf Plum Krauter Vesuvius,13,5.769230769
+Prunus cerasifera :: Cherry Plum,1306,5.918070444
+Prunus domestica 'Mariposa' :: Mariposa Plum,56,7.071428571
+Prunus ilicifoia :: Holly-leaved Cherry,3,11.66666667
+Prunus laurocerasus :: English laurel,6,13.33333333
+Prunus lusitanica :: Portugese Cherry Laurel,2,6.5
+Prunus lyonii :: Catalina Cherry,11,6.090909091
+Prunus persica :: Peach,13,3.769230769
+Prunus sargentii 'Columnaris' :: Sargent Cherry Tree 'Columnaris',1,3
+Prunus serrulata 'Amanagawa' :: Flowering Cherry Tree 'Amanagawa',2,3
+Prunus serrulata 'Kwanzan' :: Kwanzan Flowering Cherry,841,5.818073722
+Prunus serrulata 'Mt. Fuji' :: Mt. Fuji Cherry Tree,3,3
+Prunus serrulata :: Ornamental Cherry,370,3.997297297
+Prunus spp 'Purpurea' :: Cherry Plum,3,5
+Prunus spp :: Cherry,28,8.214285714
+Prunus spp :: Flowering Plum,1,7
+Prunus subhirtella 'autumnalis' :: Higan Cherry,1,3
+Prunus subhirtella 'Pendula' :: Weeping Cherry,7,8
+Prunus x yedoensis 'Akebono' :: Daybreak Yoshino Cherry,4,3
+Prunus x yedoensis :: Yoshino Cherry,64,5.390625
+Pseudotsuga menziesii :: Douglas Fir,8,22.375
+Psidium guajava :: Guava tree,2,3.5
+Punica granatum 'Wonderfu :: Pomegranate Tree 'Wonderful',1,9
+Pyracantha  'Santa Cruz' :: Firethorn Tree 'Santa Cruz',8,11.5
+Pyrus calleryana 'Aristocrat' :: Aristocrat Callery Pear,100,6.3
+Pyrus calleryana 'Bradford' :: Ornamental Pear: Bradford,36,7.861111111
+Pyrus calleryana 'Capital' :: Ornamental Pear Tree 'Capital',3,3
+Pyrus calleryana 'Chanticleer' :: Ornamental Pear Tree 'Chanticleer',35,3.257142857
+Pyrus calleryana 'Cleveland' :: Ornamental Pear Tree 'Cleveland',1,3
+Pyrus calleryana 'New Bradford' :: New Bradford Pear,19,2.894736842
+Pyrus calleryana 'Redspire' :: Ornamental Pear Tree 'Redspire',4,4.25
+Pyrus calleryana :: Ornamental Pear,603,5.739635158
+Pyrus kawakamii :: Evergreen Pear,384,6.760416667
+Pyrus spp :: Pear Tree,9,5.555555556
+Quercus agrifolia :: Coast Live Oak,114,6
+Quercus alba :: White oak,1,13
+Quercus engelmannii :: Engelmann oak,3,5.666666667
+Quercus ilex :: Holly Oak,35,6.914285714
+Quercus lobata :: Valley Oak,3,6
+Quercus palustris :: Pin Oak,2,9
+Quercus robur :: English Oak,2,4.5
+Quercus rubra :: Red Oak,4,10
+Quercus spp :: Oak,7,7.857142857
+Quercus suber :: Cork Oak,66,5.818181818
+Quercus tomentella :: Island oak,7,4.142857143
+Quercus virginiana :: Southern Live Oak,25,5.64
+Quillaja saponaria :: Chilean Soapbark,5,4.6
+Radermachera sinica :: China Doll Tree,1,20
+Rhamnus alaternus :: Italian Buckthorn,108,4.398148148
+Rhaphiolepis indica :: India Hawthorn,24,4.208333333
+Rhaphiolepis Majestic Beauty :: Indian Hawthorn  'Majestic Beau',102,4.401960784
+Rhopalostylis baueri :: Palm,1,2
+Rhopalostylis sapida :: Nikau palm,1,8
+Rhus lancea :: African Sumac,2,10
+Robinia pseudoacacia :: Black Locust,8,13.625
+Robinia x ambigua 'Purple Robe' :: Purple Robe Locust,43,5.720930233
+Robinia x ambigua :: Locust,3,8
+Salix babylonica :: Weeping Willow,8,12.5
+Salix discolor :: Pussy Willow,2,9.5
+Salix matsudana 'Tortuosa' :: Corkscrew Willow,3,10
+Salix spp :: Willow,6,4.833333333
+Sapium sebiferum :: Chinese Tallow,2,4.5
+Schefflera species :: Umbrella tree,2,12
+Schinus molle :: California Pepper,58,12.39655172
+Schinus terebinthifolius :: Brazilian Pepper,208,14.02884615
+Sequoia sempervirens :: Coast Redwood,64,11.9375
+Shrub :: Shrub,23,4.695652174
+Solanum rantonnetti ::,2,14
+Styphnolobium japonicum :: Chinese scholar tree,5,2.4
+Styrax japonicus :: Japanese Snowdrop Tree,1,19
+Syagrus romanzoffianum :: Queen Palm,187,9.946524064
+Syringa :: Lilac Tree,4,5.75
+Syzygium australe :: Eugenia,20,8.4
+Syzygium paniculatum :: Brush Cherry,111,10.08108108
+Taxodium mucronatum :: Montezuma Cypress,1,9
+Taxus baccata :: Irish Yew,96,10.02083333
+Tecoma stans :: Trumpet bush,1,3
+Thuja occidentalis 'Emerald' :: Emerald Arborvitae,34,5.735294118
+Thuja plicata :: Western Red Cedar,2,8.5
+Tibochina urvilleana :: Princess Flower,9,4.111111111
+Tilia americana :: Basswood Linden,2,6.5
+Tilia cordata :: Littleleaf Linden,23,5.217391304
+Tilia spp :: Linden,2,8.5
+Tilia tomentosa :: Silver Linden,4,3
+Trachycarpus fortunei :: Windmill Palm,77,8.896103896
+Tristania conferta ::,349,9.200573066
+Tristaniopsis laurina 'Elegant' :: Small-leaf Tristania 'Elegant',327,4.079510703
+Tristaniopsis laurina :: Swamp Myrtle,1577,5.102726696
+Ulmus 'Frontier' :: Frontier Elm,1,0
+Ulmus 'Prospector' :: Prospector Elm,8,6
+Ulmus americana :: American Elm,58,13.39655172
+Ulmus carpinifolia 'Frontier' :: Frontier Elm 'Frontier',1,3
+Ulmus parvifolia 'Drake' :: Drake's Chinese Elm,31,3.548387097
+Ulmus parvifolia 'Sempervirens' :: Weeping Chinese Elm,1,3
+Ulmus parvifolia :: Chinese Elm,558,13.56630824
+Ulmus procera :: English Elm,1,9
+Ulmus pumila :: Siberian Elm,89,31.34831461
+Ulmus spp :: Elm Spp,52,15.46153846
+Umbellularia californica :: California Bay,7,7
+Viburnum odoratissimum var. awabuki :: Sweet viburnum,2,9.5
+Vitex lucens :: Puriri tree,1,5
+Washingtonia filifera :: California Fan Palm,4,2.75
+Washingtonia robusta :: Mexican Fan Palm,232,15.22844828
+Yucca elephantipes :: Giant Yucca,8,13.875
+Yucca gloriosa :: Spanish Dagger,102,12.62745098
+Yucca spp :: Yucca,3,14.33333333
+Zelkova serrata :: Sawleaf Zelkova,13,5.692307692
